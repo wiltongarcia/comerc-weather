@@ -36,12 +36,24 @@ body {
     font-weight:bold;
 } 
 
-.app-content{
-    padding-top:55px;
+#temp-image {
+    padding-top: 6px;
 }
 
 span#degress{
     font-size: 70vh;
+}
+
+#container-degress {
+    display:none;
+}
+
+#container-image div{
+    height: 60vh;
+}
+
+#container-image div img{
+    margin-top: 30vh;
 }
 
 .text-center{
