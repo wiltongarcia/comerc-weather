@@ -1,0 +1,57 @@
+/* Sticky footer styles
+ * -------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 90px;
+    background-color: #6280DE;
+}
+/* Custom page CSS
+ * -------------------------------------------------- */
+.navbar-green{
+    background-color: #8BE445;
+    border-color: #8BE445;
+}
+
+.navbar-brand {
+    padding:3px 15px;
+}
+
+.nav>li>a:hover{
+    background-color: #6280DE;
+    color: #fff;
+}
+
+#location {
+    font-weight:bold;
+} 
+
+.app-content{
+    padding-top:55px;
+}
+
+span#degress{
+    font-size: 70vh;
+}
+
+.text-center{
+    vertical-align:middle;
+    text-align:center;
+}
+
+
+.app-footer p {
+    vertical-align:middle;
+    text-align:center;
+    font-size: 60px;
+}

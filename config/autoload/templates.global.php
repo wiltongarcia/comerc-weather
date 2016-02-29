@@ -24,6 +24,7 @@ return [
         'cache_dir'      => 'data/cache/twig',
         'assets_url'     => '/',
         'assets_version' => null,
+        'auto_reload' => true,
         'extensions'     => [
             // extension service names or instances
         ],
