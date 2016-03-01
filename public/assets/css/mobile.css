@@ -19,6 +19,10 @@ span#degress{
     height: 50px;
 }
 
+.app-footer h3 {
+    font-size: 15px;
+}
+
 .app-footer p {
     vertical-align:middle;
     text-align:center;
