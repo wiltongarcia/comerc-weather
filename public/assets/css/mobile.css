@@ -1,0 +1,26 @@
+div.collapse.navbar-collapse > ul {
+    display:none;
+}
+
+.app-content {
+    padding-top: 8vh;
+
+}
+
+span#degress{
+    font-size: 30vh;
+}
+
+#container-news p {
+    display:none;    
+}
+
+.app-footer {
+    height: 50px;
+}
+
+.app-footer p {
+    vertical-align:middle;
+    text-align:center;
+    font-size: 30px;
+}
