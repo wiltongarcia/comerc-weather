@@ -24,5 +24,11 @@ return [
             'middleware' => App\Action\WeatherAction::class,
             'allowed_methods' => ['GET'],
         ],
+        [
+            'name' => 'api.news',
+            'path' => '/api/news',
+            'middleware' => App\Action\NewsAction::class,
+            'allowed_methods' => ['GET'],
+        ],
     ],
 ];
