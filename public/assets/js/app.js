@@ -1,5 +1,6 @@
 app.weather = function () {
     $("#container-degress").hide();
+    $("#container-panorama").hide();
     $("#container-news").hide();
     $("#container-image").show();
     if (app.newsInterval) {
@@ -39,6 +40,7 @@ app.show = function () {
     $('#temp-image').attr('src', 'http://l.yimg.com/a/i/us/we/52/' + app.weatherData.code + '.gif')
     $("#container-image").hide();
     $("#container-degress").show();
+    $("#container-panorama").show();
     app.newsInterval = window.setInterval(
         (function (){ 
             var i = 0, l = $('#container-news .item').length;

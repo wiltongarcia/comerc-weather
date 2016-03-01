@@ -11,16 +11,16 @@ span#degress{
     font-size: 30vh;
 }
 
+#container-news h3 {
+    font-size: 15px;
+}
+
 #container-news p {
     display:none;    
 }
 
 .app-footer {
     height: 50px;
-}
-
-.app-footer h3 {
-    font-size: 15px;
 }
 
 .app-footer p {
