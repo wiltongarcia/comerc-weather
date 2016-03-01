@@ -23,3 +23,4 @@ Leve em consideração que o projeto realmente será testado em uma TV. A atuali
 - JqClock no relógio (https://github.com/Lwangaman/jQuery-Clock-Plugin)
 - Jquery como framework de javascript (http://jquery.com/)
 - O resultado pode ser visualizado em http://wiltongarcia.com/
+- A atualização dos dados ocorre a cada 15 minutos
