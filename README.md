@@ -1,72 +1,25 @@
-# Expressive Skeleton and Installer
+# Sintegra Test
 
-[![Build Status](https://secure.travis-ci.org/zendframework/zend-expressive-skeleton.svg?branch=master)](https://secure.travis-ci.org/zendframework/zend-expressive-skeleton)
+## Requisitos Funcionais
+Desenvolver uma aplicação responsive para ser disponibilizada em TVs FullHD. (1920 x 1080) via navegador
 
-*Begin developing PSR-7 middleware applications in seconds!*
+### Premissas
+- Rodapé, fixo com 90px de altura com a hora atual
+- Exibir clima São Paulo via Clima Agora ou outro site
+- Exibir posts do Panorama Comerc consumindo RSS/ATOM
+- Disponibilizar acesso através de uma URL
+- Disponibilizar código-fonte via GitHub 
 
-[zend-expressive](https://github.com/zendframework/zend-expressive) builds on
-[zend-stratigility](https://github.com/zendframework/zend-stratigility) to
-provide a minimalist PSR-7 middleware framework for PHP with routing, DI
-container, optional templating, and optional error handling capabilities.
+O layout e as cores não serão avaliados, porém será interessante usar elementos e cores da marca Comerc Energia.
 
-This installer will setup a skeleton application based on zend-expressive by
-choosing optional packages based on user input as demonstrated in the following
-screenshot:
+Fique a vontade para utilizar bibliotecas, frameworks e o que for comum para você na construção de um projeto.
 
-![screenshot-installer](https://cloud.githubusercontent.com/assets/459648/10410494/16bdc674-6f6d-11e5-8190-3c1466e93361.png)
+Leve em consideração que o projeto realmente será testado em uma TV. A atualização automática de tempos em tempos seria um diferencial.
 
-The user selected packages are saved into `composer.json` so that everyone else
-working on the project have the same packages installed. Configuration files and
-templates are prepared for first use. The installer command is removed from
-`composer.json` after setup succeeded, and all installer related files are
-removed.
-
-## Getting Started
-
-Start your new Expressive project with composer:
-
-```bash
-$ composer create-project zendframework/zend-expressive-skeleton <project-path>
-```
-
-After choosing and installing the packages you want, go to the
-`<project-path>` and start PHP's built-in web server to verify installation:
-
-```bash
-$ composer serve
-```
-
-You can then browse to http://localhost:8080.
-
-> ### Setting a timeout
->
-> Composer commands time out after 300 seconds (5 minutes). On Linux-based
-> systems, the `php -S` command that `composer server` spawns continues running
-> as a background process, but on other systems halts when the timeout occurs.
->
-> If you want the server to live longer, you can use the
-> `COMPOSER_PROCESS_TIMEOUT` environment variable when executing `composer
-> serve` to extend the timeout. As an example, the following will extend it
-> to a full day:
->
-> ```bash
-> $ COMPOSER_PROCESS_TIMEOUT=86400 composer serve
-> ```
-
-## Skeleton Development
-
-This section applies only if you cloned this repo with `git clone`, not when you installed expressive with
-`composer create-project ...`.
-
-If you want to run tests against the installer, you need to clone this repo and setup all dependencies with composer.
-Make sure you **prevent composer running scripts** with `--no-scripts`, otherwise it will remove the installer and
-all tests.
-
-```bash
-$ composer install --no-scripts
-$ composer test
-```
-
-Please note that the installer tests remove installed config files and templates before and after running the tests.
-
-Before contributing read [the contributing guide](CONTRIBUTING.md).
+## Especificações do Desenvolvedor
+- Desenvolvido usando o micro framework Zend Expressive ( https://zendframework.github.io/zend-expressive/)
+- Utilizei a API do Yahoo  Weather (https://developer.yahoo.com/weather/)
+- Bootstrap como framework de css (http://getbootstrap.com/)
+- JqClock no relógio (https://github.com/Lwangaman/jQuery-Clock-Plugin)
+- Jquery como framework de javascript (http://jquery.com/)
+- O resultado pode ser visualizado em http://wiltongarcia.com/
