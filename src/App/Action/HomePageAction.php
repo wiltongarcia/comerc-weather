@@ -26,7 +26,16 @@ class HomePageAction
 
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response, callable $next = null)
     {
+        $params = $request->getQueryParams(); 
+        
         $data = [];
+
+        $data['location'] = 'São Paulo, SP, BR';
+        if (!empty($params['location'])) {
+            $data['location'] = $params['location'];
+        }
+
+        $data['timestamp'] = time() * 1000;
         return new HtmlResponse($this->template->render('app::home-page', $data));
     }
 }

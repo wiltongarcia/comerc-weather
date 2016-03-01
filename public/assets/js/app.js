@@ -1,7 +1,3 @@
-var app = {
-    location: 'São Paulo, SP'
-};
-
 app.weather = function () {
     $("#container-degress").hide();
     $("#container-news").hide();
@@ -12,7 +8,7 @@ app.weather = function () {
     $.ajax({
         method: 'GET',
         url: '/api/weather',
-        data: { location: app.location},
+        data: { 'location': app.location},
         dataType: 'json',
         success: app.news
     });
@@ -65,7 +61,7 @@ app.show = function () {
 };
 
 app.initialize = function () {
-    $('#clock').clock({'calendar':'false', 'format':24});
+    $('#clock').clock({'calendar':'false', 'format':24, 'timestamp':servertime});
     app.weather();
     window.setInterval(app.weather, 900000);
 };
