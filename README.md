@@ -1,4 +1,4 @@
-# Sintegra Test
+# Comerc Weather
 
 ## Requisitos Funcionais
 Desenvolver uma aplicação responsive para ser disponibilizada em TVs FullHD. (1920 x 1080) via navegador
