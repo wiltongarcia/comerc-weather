@@ -20,7 +20,14 @@ if (is_file($cachedConfigFile)) {
     $config = include $cachedConfigFile;
 } else {
     // Load configuration from autoload path
-    foreach (Glob::glob('config/autoload/{{,*.}global,{,*.}local}.php', Glob::GLOB_BRACE) as $file) {
+    $files = Glob::glob('config/autoload/{{,*.}global,{,*.}local}.php', Glob::GLOB_BRACE);
+    /**
+     *   @see https://code.google.com/p/googleappengine/issues/detail?id=10623
+     **/
+    if (empty($files)) {
+        $files = include 'files.php';
+    }
+    foreach ($files as $file) {
         $config = ArrayUtils::merge($config, include $file);
     }
 
