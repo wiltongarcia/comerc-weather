@@ -22,5 +22,5 @@ Leve em consideração que o projeto realmente será testado em uma TV. A atuali
 - Bootstrap como framework de css (http://getbootstrap.com/)
 - JqClock no relógio (https://github.com/Lwangaman/jQuery-Clock-Plugin)
 - Jquery como framework de javascript (http://jquery.com/)
-- O resultado pode ser visualizado em http://wiltongarcia.com/
+- O resultado pode ser visualizado em http://comerc-weather.wiltongarcia.com/
 - A atualização dos dados ocorre a cada 15 minutos
